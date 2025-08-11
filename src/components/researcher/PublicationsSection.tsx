@@ -91,7 +91,7 @@ export default function PublicationsSection({
             viewport={{ once: true }}
             transition={{ duration: 0.25 }}
           >
-            <Card className="h-full border-slate-200 dark:border-slate-800">
+            <Card className="group/card h-full border-slate-200 dark:border-slate-800 transition-colors hover:bg-slate-50 dark:hover:bg-slate-900">
               <CardHeader>
                 <CardTitle className="text-base md:text-lg leading-snug">
                   {p.title}
@@ -111,7 +111,7 @@ export default function PublicationsSection({
                     </Badge>
                   ))}
                 </div>
-                <div className="flex flex-wrap items-center gap-2 pt-1">
+                <div className="group/buttons flex flex-wrap items-center gap-2 pt-1">
                   {p.links?.arxiv && <LinkPill href={p.links.arxiv}>arXiv</LinkPill>}
                   {p.links?.pdf && <LinkPill href={p.links.pdf}>PDF</LinkPill>}
                   {p.links?.doi && <LinkPill href={p.links.doi}>DOI</LinkPill>}
@@ -119,7 +119,7 @@ export default function PublicationsSection({
                   <Button
                     size="sm"
                     variant="ghost"
-                    className="ml-auto"
+                    className="ml-auto transition-colors group-hover/buttons:bg-slate-100 dark:group-hover/buttons:bg-slate-800 group-hover/buttons:text-slate-900 dark:group-hover/buttons:text-slate-100"
                     onClick={() => onCopy(p.bibtex, p.id)}
                   >
                     {copiedId === p.id ? (

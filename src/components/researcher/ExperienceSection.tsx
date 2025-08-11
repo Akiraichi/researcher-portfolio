@@ -17,7 +17,7 @@ export default function ExperienceSection({ experiences }: { experiences: Experi
       </h2>
       <div className="mt-6 grid md:grid-cols-2 gap-4">
         {experiences.map((e, i) => (
-          <Card key={i} className="border-slate-200 dark:border-slate-800">
+          <Card key={i} className="group/card border-slate-200 dark:border-slate-800 transition-colors hover:bg-slate-50 dark:hover:bg-slate-900">
             <CardHeader>
               <CardTitle className="text-lg">{e.title}</CardTitle>
             </CardHeader>

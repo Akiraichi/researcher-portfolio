@@ -16,7 +16,7 @@ export default function NewsSection({ news }: { news: NewsItem[] }) {
         {news.map((n, i) => (
           <div
             key={i}
-            className="flex items-start gap-4 p-3 rounded-xl border border-slate-200 dark:border-slate-800"
+            className="flex items-start gap-4 p-3 rounded-xl border border-slate-200 dark:border-slate-800 transition-colors hover:bg-slate-50 dark:hover:bg-slate-900"
           >
             <div className="text-sm font-medium w-28 shrink-0 text-slate-500">
               {n.date}
