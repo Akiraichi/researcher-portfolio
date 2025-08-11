@@ -132,18 +132,45 @@ export default function ResearcherPortfolio() {
                     <h2 className="text-2xl md:text-3xl font-bold flex items-center gap-2">
                         <FileText className="h-6 w-6"/> News
                     </h2>
-                    <div className="mt-6 space-y-3">
-                        {NEWS.map((n, i) => (
-                            <div
-                                key={i}
-                                className="flex items-start gap-4 p-3 rounded-xl border border-slate-200 dark:border-slate-800 transition-colors hover:bg-slate-50 dark:hover:bg-slate-900"
-                            >
-                                <div className="text-sm font-medium w-28 shrink-0 text-slate-500">
-                                    {n.date}
-                                </div>
-                                <div className="text-slate-700 dark:text-slate-300">{n.text}</div>
-                            </div>
-                        ))}
+                    {/* Timeline */}
+                    <div className="relative mt-6">
+                        {/* Vertical line */}
+                        <div className="absolute left-4 top-0 bottom-0 w-px bg-slate-200 dark:bg-slate-800" aria-hidden="true"/>
+                        <ol className="space-y-6">
+                            {([...NEWS]
+                                .sort((a, b) => {
+                                    const da = Date.parse(a.date);
+                                    const db = Date.parse(b.date);
+                                    if (isNaN(da) || isNaN(db)) return 0;
+                                    return db - da;
+                                }))
+                                .map((n, i) => {
+                                    let display = n.date;
+                                    let dateTime = n.date;
+                                    const ms = Date.parse(n.date);
+                                    if (!isNaN(ms)) {
+                                        const d = new Date(ms);
+                                        display = new Intl.DateTimeFormat("ja-JP", {
+                                            year: "numeric",
+                                            month: "2-digit",
+                                            day: "2-digit",
+                                        }).format(d);
+                                        dateTime = d.toISOString().slice(0, 10);
+                                    }
+                                    return (
+                                        <li key={i} className="relative pl-10 md:pl-12">
+                                            {/* Dot */}
+                                            <span className="absolute left-[0.625rem] top-2 h-3 w-3 rounded-full bg-[var(--primary)] ring-2 ring-white dark:ring-slate-950" aria-hidden="true"/>
+                                            <div className="flex flex-wrap items-start gap-3">
+                                                <time dateTime={dateTime} aria-label={`更新日 ${display}`} className="inline-flex items-center justify-center text-xs font-medium px-2.5 py-1 rounded-full bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-200">
+                                                    {display}
+                                                </time>
+                                                <p className="text-slate-700 dark:text-slate-300 leading-relaxed">{n.text}</p>
+                                            </div>
+                                        </li>
+                                    );
+                                })}
+                        </ol>
                     </div>
                 </section>
 

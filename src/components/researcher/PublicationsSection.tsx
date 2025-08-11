@@ -119,7 +119,7 @@ export default function PublicationsSection({
                   <Button
                     size="sm"
                     variant="ghost"
-                    className="ml-auto transition-colors group-hover/buttons:bg-slate-100 dark:group-hover/buttons:bg-slate-800 group-hover/buttons:text-slate-900 dark:group-hover/buttons:text-slate-100"
+                    className="ml-auto transition-colors hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-slate-100"
                     onClick={() => onCopy(p.bibtex, p.id)}
                   >
                     {copiedId === p.id ? (
