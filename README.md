@@ -58,4 +58,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ### 補足
 - `_next` ディレクトリ配下のアセットが Jekyll によって無視されないよう、`public/.nojekyll` を配置しています。
 - GitHub Actions のワークフローは `.github/workflows/gh-pages.yml` に配置しています。
-- 画像最適化は静的出力に対応するため `images.unoptimized: true` を設定しています。
+- 画像最適化は静的出力に対応するため `images.unoptimized: true` を設定しています
