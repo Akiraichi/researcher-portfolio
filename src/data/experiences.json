@@ -1,0 +1,19 @@
+[
+  {
+    "title": "デモ文章です。Assistant Professor",
+    "org": "Osaka University, Graduate School of Engineering Science",
+    "period": "2023 — Present",
+    "bullets": [
+      "Quantum kernel methods, Explicit Quantum Surrogates (EQS)",
+      "Measurement-based QML, diffusion-map inspired feature design"
+    ]
+  },
+  {
+    "title": "デモ文章です。Ph.D. in Engineering Science",
+    "org": "Osaka University",
+    "period": "2019 — 2023",
+    "bullets": [
+      "Thesis on quantum learning theory and kernel generalization"
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "nakayama2025eqs",
+    "title": "デモ文章です。Explicit Quantum Surrogates for Efficient Prediction",
+    "authors": ["M. Nakayama", "T. Anai", "K. Emori"],
+    "venue": "Journal of Quantum ML",
+    "year": 2025,
+    "type": "Journal",
+    "tags": ["QML", "Kernel", "EQS"],
+    "links": {
+      "arxiv": "https://arxiv.org/abs/0000.00000",
+      "pdf": "#",
+      "code": "#",
+      "doi": "https://doi.org/10.0000/example"
+    },
+    "bibtex": "@article{nakayama2025eqs,\n  title={Explicit Quantum Surrogates for Efficient Prediction},\n  author={Nakayama, Masakuni and Anai, Tomoharu and Emori, Kazuki},\n  journal={Journal of Quantum ML},\n  year={2025}\n}"
+  },
+  {
+    "id": "nakayama2024measure",
+    "title": "デモ文章です。Measurement-Based Quantum Kernels without Exponential Concentration",
+    "authors": ["M. Nakayama", "Y. Suzuki"],
+    "venue": "NeurIPS Workshop on Quantum ML",
+    "year": 2024,
+    "type": "Conference",
+    "tags": ["QML", "Kernel", "Measurement"],
+    "links": {
+      "arxiv": "https://arxiv.org/abs/0000.00001",
+      "pdf": "#",
+      "code": "#"
+    },
+    "bibtex": "@inproceedings{nakayama2024measure,\n  title={Measurement-Based Quantum Kernels without Exponential Concentration},\n  author={Nakayama, Masakuni and Suzuki, Y.},\n  booktitle={NeurIPS Workshop on Quantum ML},\n  year={2024}\n}"
+  },
+  {
+    "id": "nakayama2023survey",
+    "title": "デモ文章です。Survey: Diffusion Maps and Quantum Walks for Representation Learning",
+    "authors": ["M. Nakayama"],
+    "venue": "arXiv",
+    "year": 2023,
+    "type": "Preprint",
+    "tags": ["Survey", "Diffusion", "Quantum Walk"],
+    "links": {
+      "arxiv": "https://arxiv.org/abs/0000.00002"
+    },
+    "bibtex": "@misc{nakayama2023survey,\n  title={Survey: Diffusion Maps and Quantum Walks for Representation Learning},\n  author={Nakayama, Masakuni},\n  year={2023},\n  eprint={0000.00002},\n  archivePrefix={arXiv}\n}"
+  }
+]
